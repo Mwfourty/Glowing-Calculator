@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glowing Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <input id="input" type="text" readonly>
+        <button onclick="appendToDisplay('+')" id="plus" class="buttons"><i class="fa-solid fa-plus"></i></button>
+        <button onclick="appendToDisplay('-')" id="minus" class="buttons"><i class="fa-solid fa-minus"></i></button>
+        <button onclick="appendToDisplay('*')" id="times" class="buttons"><i class="fa-solid fa-xmark"></i></button>
+        <button onclick="appendToDisplay('/')" id="divide" class="buttons"><i class="fa-solid fa-divide"></i></button>
+        <button onclick="calculate()" id="equals" class="buttons"><i class="fa-solid fa-equals"></i></button>
+        <button onclick="clearDisplay()" id="clear" class="buttons"><i class="fa-solid fa-eraser"></i></button>
+        <button onclick="appendToDisplay('.')" id="point" class="buttons">.</button>
+        <button onclick="appendToDisplay('1')" id="one" class="numbers">1</button>
+        <button onclick="appendToDisplay('2')" id="two" class="numbers">2</button>
+        <button onclick="appendToDisplay('3')" id="three" class="numbers">3</button>
+        <button onclick="appendToDisplay('4')" id="four" class="numbers">4</button>
+        <button onclick="appendToDisplay('5')" id="five" class="numbers">5</button>
+        <button onclick="appendToDisplay('6')" id="six" class="numbers">6</button>
+        <button onclick="appendToDisplay('7')" id="seven" class="numbers">7</button>
+        <button onclick="appendToDisplay('8')" id="eight" class="numbers">8</button>
+        <button onclick="appendToDisplay('9')" id="nine" class="numbers">9</button>
+        <button onclick="appendToDisplay('0')" id="zero" class="numbers">0</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
